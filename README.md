@@ -4,6 +4,10 @@
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyour-username%2FAi-ChatRoom)
 
+
+## 演示提示：https://chat.31tu.com/
+
+
 ## 📌 功能特点
 
 - ✅ 实时聊天，即时消息推送

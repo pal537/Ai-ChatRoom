@@ -1,0 +1,46 @@
+/* 聊天气泡样式 */
+.chat-bubble {
+  @apply px-4 py-2 rounded-lg max-w-md break-words shadow-md transition-all duration-300;
+}
+
+.chat-bubble-self {
+  @apply bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:shadow-lg hover:scale-[1.02];
+}
+
+.chat-bubble-other {
+  @apply bg-white text-dark border border-gray-200 hover:shadow-lg hover:scale-[1.02];
+}
+
+.chat-bubble-ai {
+  @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white hover:shadow-lg hover:scale-[1.02];
+}
+
+/* 添加字体和动画效果 */
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+@keyframes fade-in-out {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(10px); }
+}
+
+.animate-fade-in-out {
+  animation: fade-in-out 2s ease-in-out forwards;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .5; }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
